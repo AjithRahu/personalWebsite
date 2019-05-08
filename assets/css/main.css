@@ -1,14 +1,30 @@
+.body {
+    background: #718292;
+}
+
 /*Main Box CSS*/
   .box{
-    background: #008B8B;
+    background: #082341;
     padding: 40px;
     text-align: center;
     margin: auto;
     margin-top: 5%;
-
+    margin-bottom: -2000px;
     color: white;
     font-family: 'Century Gothic',sans-serif;
   }
+
+  .box-text {
+      color: #FFFFFF;
+      width: 600px;
+      align-items: center;
+  }
+
+  .box-title {
+      color: #AE9A61;
+      text-align: center;
+  }
+
   .box-img{
     border-radius: 50%;
     width: 200px;
@@ -17,7 +33,7 @@
   }
   .box h1{
     font-size: 40px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-weight: 100;
   }
   .box h5{
@@ -27,6 +43,7 @@
   }
   .box p{
     text-align: justify;
+    letter-spacing: 1px;
   }
   ul{
     margin: 0;
@@ -49,6 +66,10 @@
 
 
  /* Sizing for different views */
+/* Small device (iPhone 5S type small)*/
+@media (max-width: 400px) {
+}
+
  /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     .box{
@@ -57,9 +78,20 @@
 }
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+@media (min-width: 715px) {
     .box{
         width: 500px;
+    }
+}
+@media (max-width: 715px) {
+    .box{
+        font-size: 10px;
+    }
+    .box-title{
+        font-size: 20px;
+    }
+    .box-subtitle {
+        font-size: 15px;
     }
 }
 
