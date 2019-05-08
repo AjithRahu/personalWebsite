@@ -1,0 +1,78 @@
+/*Main Box CSS*/
+  .box{
+    background: #008B8B;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+
+    color: white;
+    font-family: 'Century Gothic',sans-serif;
+  }
+  .box-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .box h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+  }
+  .box h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+  }
+  .box p{
+    text-align: justify;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  .box li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+  }
+  .box li a{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    
+  }
+  .box li a:hover{
+    color: #b9b9b9;
+  }
+
+
+ /* Sizing for different views */
+ /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .box{
+        width: 400px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .box{
+        width: 500px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .box{
+        width: 800px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .box{
+        width: 1000px;
+    }
+}
