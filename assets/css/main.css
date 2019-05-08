@@ -9,14 +9,12 @@
     text-align: center;
     margin: auto;
     margin-top: 5%;
-    margin-bottom: -2000px;
     color: white;
     font-family: 'Century Gothic',sans-serif;
   }
 
   .box-text {
       color: #FFFFFF;
-      width: 600px;
       align-items: center;
   }
 
@@ -43,7 +41,6 @@
   }
   .box p{
     text-align: justify;
-    letter-spacing: 1px;
   }
   ul{
     margin: 0;
@@ -66,14 +63,23 @@
 
 
  /* Sizing for different views */
-/* Small device (iPhone 5S type small)*/
-@media (max-width: 400px) {
-}
-
  /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-    .box{
-        width: 400px;
+@media (min-width: 400px) {
+    .box-text {
+        font-size: 10px;
+    }
+    .box-title {
+        font-size: 30px;
+    }
+    .box-subtitle {
+        font-size: 20px;
+    }
+
+    .box p {
+        text-align: center;
+    }
+    .box {
+        height: 90%;
     }
 }
 
@@ -83,15 +89,16 @@
         width: 500px;
     }
 }
-@media (max-width: 715px) {
+@media (min-width: 715px) {
     .box{
         font-size: 10px;
+        letter-spacing: 2px;
     }
     .box-title{
-        font-size: 20px;
+        font-size: 50px;
     }
     .box-subtitle {
-        font-size: 15px;
+        font-size: 25px;
     }
 }
 
@@ -100,11 +107,27 @@
     .box{
         width: 800px;
     }
+    .box-title{
+        font-size: 50;
+    }
+    .box-subtitle {
+        font-size: 25;
+    }
+
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
     .box{
         width: 1000px;
+    }
+    .box-title{
+        font-size: 50px;
+    }
+    .box-subtitle {
+        font-size: 25px;
+    }
+    .box-text {
+        font-size: 15px;
     }
 }
